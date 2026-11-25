@@ -40,7 +40,7 @@ document.querySelector("#toggle-password").addEventListener("click", event => {
   event.currentTarget.setAttribute("aria-label", visible ? "Show password" : "Hide password");
 });
 forgotButton.addEventListener("click", () => showMessage("Password recovery will be available after account authentication is connected."));
-document.querySelector("#guest-button").addEventListener("click", () => showMessage("Guest access will be enabled when the playable arena is connected."));
+document.querySelector("#guest-button").addEventListener("click", () => { window.location.href = "lobby.html"; });
 form.addEventListener("submit", event => {
   event.preventDefault();
   showMessage("");
