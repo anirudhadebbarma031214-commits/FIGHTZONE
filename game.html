@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#111a27">
+  <title>City Ruins — FIGHTZONE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <canvas id="game" aria-label="Playable City Ruins 2D shooter"></canvas><canvas id="rain" aria-hidden="true"></canvas>
+  <header class="hud-top"><button id="back" class="hud-button">← LOBBY</button><div class="map-title"><b>CITY RUINS</b><span>THE LAST BLOCK · BLUE-HOUR DUSK</span></div><label class="quality-picker">QUALITY <select id="quality"><option>Low</option><option>Medium</option><option selected>High</option><option>Ultra</option></select></label><span id="fps" class="fps">60 FPS</span><button id="pause" class="hud-button">RESUME</button></header>
+  <section class="vitals" aria-label="Fighter status"><div><span>HEALTH</span><i class="meter"><b id="health"></b></i></div><div><span>JETPACK</span><i class="meter jet"><b id="jetpack"></b></i></div><div class="ammo-label">AMMO <b id="ammo">90</b></div></section>
+  <aside class="map-info"><strong id="mapName"></strong><span id="mapDescription"></span><div><span id="weather"></span><span id="time"></span></div></aside>
+  <section class="controls" aria-label="Touch controls"><div class="move-controls"><button data-control="left" aria-label="Move left">◀</button><button data-control="right" aria-label="Move right">▶</button></div><div class="action-controls"><button data-control="fire" class="fire" aria-label="Fire weapon">FIRE</button><button data-control="jump" aria-label="Jump and jetpack">▲<small>JET</small></button></div></section>
+  <div class="overlay" id="overlay"><div class="briefing"><p class="eyebrow">FIGHTZONE / LIVE FIRE DEMO</p><h1>CITY<br><span>RUINS</span></h1><p id="message" class="brief-description"></p><p class="details"><span>◉ LIGHT RAIN</span><span>◷ BLUE-HOUR DUSK</span><span>▰ 2–8 FIGHTERS</span></p><p id="mapDescription" class="brief-description"></p><div class="brief-meta"><span>STANDARD DIFFICULTY</span><span>ROOFTOPS · TUNNELS · COVER</span></div><button id="start" class="start-button">DEPLOY TO CITY RUINS <b>↗</b></button><p class="instructions">A / D or ← / → move · SPACE / W jump & jet · F / mouse fire · ESC pause</p></div></div>
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>

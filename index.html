@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#10151d">
   <meta name="description" content="FIGHTZONE — Enter the arena.">
   <title>FIGHTZONE — Sign in</title>
@@ -46,8 +46,8 @@
           <label for="email">EMAIL ADDRESS</label>
           <div class="input-wrap"><span class="input-icon">✉</span><input id="email" name="email" type="email" placeholder="fighter@example.com" autocomplete="email" required></div>
           <div class="password-heading"><label for="password">PASSWORD</label><button class="text-button" id="forgot-button" type="button">FORGOT?</button></div>
-          <div class="input-wrap"><span class="input-icon">▣</span><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" minlength="8" required><button class="eye-button" id="toggle-password" type="button" aria-label="Show password">◉</button></div>
-          <div class="confirm-field" id="confirm-field"><label for="confirm-password">CONFIRM PASSWORD</label><div class="input-wrap"><span class="input-icon">▣</span><input id="confirm-password" name="confirm-password" type="password" placeholder="Re-enter your password" autocomplete="new-password"></div></div>
+          <div class="input-wrap"><span class="input-icon">▣</span><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" minlength="8" required><button class="text-button" id="toggle-password" type="button" aria-label="Show password">SHOW</button></div>
+          <div class="confirm-field" id="confirm-field"><label for="confirm-password">CONFIRM PASSWORD</label><div class="input-wrap"><span class="input-icon">▣</span><input id="confirm-password" name="confirm-password" type="password" placeholder="Repeat your password" autocomplete="new-password" minlength="8"></div></div>
           <div class="form-options"><label class="check-label"><input type="checkbox" id="remember" checked><span></span> Remember me</label><span class="tiny-note">NO SPAM. JUST BATTLES.</span></div>
           <button class="submit-button" id="submit-button" type="submit"><span id="submit-label">ENTER THE ARENA</span><b>↗</b></button>
           <p class="message" id="form-message" role="status" aria-live="polite"></p>
