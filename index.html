@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10151d">
+  <meta name="description" content="FIGHTZONE — Enter the arena.">
+  <title>FIGHTZONE — Sign in</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <main class="shell">
+    <section class="hero" aria-label="FIGHTZONE game introduction">
+      <div class="topline"><span class="brand-mark">F<span>Z</span></span><span class="top-tag">MULTIPLAYER ARENA</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i> THE BATTLE STARTS HERE</p>
+        <h1>FIGHT<br><span>ZONE</span><b>®</b></h1>
+        <p class="hero-description">Lock in. Gear up. Jump into the fight.</p>
+        <div class="hero-stats"><div><strong>2D</strong><small>ARENA ACTION</small></div><div><strong>ONLINE</strong><small>COMING SOON</small></div><div><strong>∞</strong><small>WAYS TO FIGHT</small></div></div>
+      </div>
+      <div class="arena-art" aria-hidden="true">
+        <div class="sun"></div><div class="platform platform-one"></div><div class="platform platform-two"></div>
+        <div class="fighter"><div class="helmet"></div><div class="body"></div><div class="pack"></div><div class="arm"></div><div class="gun"></div><div class="leg leg-one"></div><div class="leg leg-two"></div></div>
+        <span class="art-label">READY<br>FOR DEPLOYMENT</span>
+        <div class="crosshair">＋</div>
+      </div>
+      <div class="hero-footer"><span>EST. 2026</span><span>PLAY BOLD. FIGHT SMART.</span><span>V. 0.1 PRE-ALPHA</span></div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="auth-top"><span class="status-dot"></span> PLAYER ACCESS <span class="secure">● SECURE GATEWAY</span></div>
+      <div class="form-wrap">
+        <div class="mobile-brand">FIGHT<span>ZONE</span></div>
+        <p class="eyebrow">WELCOME, FIGHTER</p>
+        <h2 id="form-title">SIGN IN<span>.</span></h2>
+        <p class="subheading" id="form-subtitle">Your squad is waiting. Get back in the arena.</p>
+        <div class="tabs" role="tablist" aria-label="Account access">
+          <button class="tab active" id="signin-tab" type="button" role="tab" aria-selected="true">SIGN IN</button>
+          <button class="tab" id="signup-tab" type="button" role="tab" aria-selected="false">CREATE ACCOUNT</button>
+        </div>
+        <form id="auth-form" novalidate>
+          <label for="email">EMAIL ADDRESS</label>
+          <div class="input-wrap"><span class="input-icon">✉</span><input id="email" name="email" type="email" placeholder="fighter@example.com" autocomplete="email" required></div>
+          <div class="password-heading"><label for="password">PASSWORD</label><button class="text-button" id="forgot-button" type="button">FORGOT?</button></div>
+          <div class="input-wrap"><span class="input-icon">▣</span><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" minlength="8" required><button class="eye-button" id="toggle-password" type="button" aria-label="Show password">◉</button></div>
+          <div class="confirm-field" id="confirm-field"><label for="confirm-password">CONFIRM PASSWORD</label><div class="input-wrap"><span class="input-icon">▣</span><input id="confirm-password" name="confirm-password" type="password" placeholder="Re-enter your password" autocomplete="new-password"></div></div>
+          <div class="form-options"><label class="check-label"><input type="checkbox" id="remember" checked><span></span> Remember me</label><span class="tiny-note">NO SPAM. JUST BATTLES.</span></div>
+          <button class="submit-button" id="submit-button" type="submit"><span id="submit-label">ENTER THE ARENA</span><b>↗</b></button>
+          <p class="message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+        <div class="divider"><span>OR</span></div>
+        <button class="guest-button" id="guest-button" type="button">CONTINUE AS GUEST <span>→</span></button>
+        <p class="legal">By continuing, you agree to play fair and respect other fighters.</p>
+      </div>
+      <div class="panel-bottom"><span>FIGHTZONE © 2026</span><span>BUILT FOR THE BRAVE</span></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
